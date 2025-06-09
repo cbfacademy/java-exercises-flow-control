@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class FlowControlExercises {
+public class ControlFlowExercises {
 
     public List<String> fizzBuzz(List<Integer> numbers) {
         // TODO - Implement this method such that
@@ -42,6 +42,6 @@ public class FlowControlExercises {
     }
 
     public String getName() {
-        return "Flow Control Exercises";
+        return "Control Flow Exercises";
     }
 }
