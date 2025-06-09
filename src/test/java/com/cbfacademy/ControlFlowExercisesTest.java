@@ -1,10 +1,8 @@
 package com.cbfacademy;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,28 +10,30 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Stream;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.params.provider.Arguments.arguments;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
-@DisplayName(value = "Flow Control Exercises")
-public class FlowControlExercisesTest {
+@DisplayName(value = "Control Flow Exercises")
+public class ControlFlowExercisesTest {
 
     @Test
     @DisplayName("returns this unit's name")
     public void returnUnitName() {
-        final FlowControlExercises exercise = new FlowControlExercises();
+        final ControlFlowExercises exercise = new ControlFlowExercises();
 
         final String name = exercise.getName();
 
-        assertThat(name, is("Flow Control Exercises"));
+        assertThat(name, is("Control Flow Exercises"));
     }
 
     @ParameterizedTest
     @MethodSource("fizzBuzzExerciseProvider")
     @DisplayName("Fizz Buzz")
     public void fizzBuzz(List<Integer> numbers, List<String> expected) {
-        final FlowControlExercises exercise = new FlowControlExercises();
+        final ControlFlowExercises exercise = new ControlFlowExercises();
 
         final List<String> result = exercise.fizzBuzz(numbers);
 
@@ -45,7 +45,7 @@ public class FlowControlExercisesTest {
     @MethodSource("monthExerciseProvider")
     @DisplayName("Months")
     public void months(Integer number, String expected) {
-        final FlowControlExercises exercise = new FlowControlExercises();
+        final ControlFlowExercises exercise = new ControlFlowExercises();
 
         final String result = exercise.whichMonth(number);
 
@@ -55,7 +55,7 @@ public class FlowControlExercisesTest {
     @Test
     @DisplayName("Odd and Even Numbers")
     public void oddAndEvenNumbers() {
-        final FlowControlExercises exercise = new FlowControlExercises();
+        final ControlFlowExercises exercise = new ControlFlowExercises();
 
         final Map<String, Integer> result = exercise.sumOfOddsAndSumOfEvens();
 
@@ -71,7 +71,7 @@ public class FlowControlExercisesTest {
     @MethodSource("reverseExerciseProvider")
     @DisplayName("Reverse the list order")
     public void reverseOrder(ArrayList<Integer> numbers, List<Integer> expected) {
-        final FlowControlExercises exercise = new FlowControlExercises();
+        final ControlFlowExercises exercise = new ControlFlowExercises();
 
         final List<Integer> result = exercise.reverse(numbers);
 

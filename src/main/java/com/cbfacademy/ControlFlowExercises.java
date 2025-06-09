@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FlowControlExercises {
+public class ControlFlowExercises {
 
     public List<String> fizzBuzz(List<Integer> numbers) {
         //  it creates a list where for each element of the input list ${numbers}
@@ -108,6 +108,6 @@ public class FlowControlExercises {
     }
 
     public String getName() {
-        return "Flow Control Exercises";
+        return "Control Flow Exercises";
     }
 }

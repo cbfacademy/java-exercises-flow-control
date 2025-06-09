@@ -1,4 +1,4 @@
-# Flow Control
+# Control Flow
 
 [![Java Language](https://img.shields.io/badge/PLATFORM-OpenJDK-3A75B0.svg?style=for-the-badge)][1]
 [![JUnit5 Testing Framework](https://img.shields.io/badge/testing%20framework-JUnit5-26A162.svg?style=for-the-badge)][3]
@@ -10,9 +10,9 @@ The goal of these exercises is to practise:
 
 We've provided this starter project, which contains:
 
-- the [FlowControlExercises class][5] with four methods to implement: `fizzBuzz`, `weeksAndDays`, and `oddAndEvenNumbers`
+- the [ControlFlowExercises class][5] with four methods to implement: `fizzBuzz`, `weeksAndDays`, and `oddAndEvenNumbers`
 
-- and a test suite to verify your implementation [FlowControlExercisesTest][6].
+- and a test suite to verify your implementation [ControlFlowExercisesTest][6].
 
 In each method, replace the `throw new RuntimeException("Not implemented")` with your code.
 
@@ -87,7 +87,7 @@ public List<Integer> reverse(ArrayList<Integer> numbers) {
 
 ## :white_check_mark: Verify Your Implementation
 
-To verify that your code works as expected, run the `FlowControlExercisesTest` tests.
+To verify that your code works as expected, run the `ControlFlowExercisesTest` tests.
 
 In your terminal, ensure that you are in the `flow-control` folder.
 Then run the following command in your terminal.
@@ -110,7 +110,7 @@ Your implementation is correct when all tests pass:
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] ├─ Flow Control Exercises - 0.073s
+[INFO] ├─ Control Flow Exercises - 0.073s
 [INFO] │  ├─ ✔ returns this unit's name - 0.011s
 [INFO] │  ├─ ✔ Months[1] 17, Invalid month number - 0.017s
 [INFO] │  ├─ ✔ Months[2] 0, Invalid month number - 0.001s
@@ -142,5 +142,5 @@ Your implementation is correct when all tests pass:
 [2]: https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html
 [3]: https://junit.org/junit5/
 [4]: https://maven.apache.org/
-[5]: src/main/java/com/cbfacademy/FlowControlExercises.java
-[6]: src/test/java/com/cbfacademy/FlowControlExercisesTest.java
+[5]: src/main/java/com/cbfacademy/ControlFlowExercises.java
+[6]: src/test/java/com/cbfacademy/ControlFlowExercisesTest.java
